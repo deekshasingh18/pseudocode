@@ -1,5 +1,8 @@
+
 import streamlit as st
 import openai
+
+openai.api_key = st.secrets["openai_api_key"]
 
 # Page configuration
 st.set_page_config(page_title="Pseudo2Code (with Explain)", layout="centered")
